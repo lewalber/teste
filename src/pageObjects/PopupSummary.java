@@ -23,6 +23,44 @@ public class PopupSummary{
     	this.driver = driver;
 
     }
+    
+    public WebElement PrecoUnitario, TotalBuscado;
+
+
+    public float BuscarPrecoUnitario() {
+    	
+    	PrecoUnitario = driver.findElement(total_products);
+
+    			String StringPrecoUnitario;
+    			float ValorProduto = 0;
+    			StringPrecoUnitario = PrecoUnitario.getText();
+//    			StringPrecoUnitario = StringPrecoUnitario.substring(2,10);
+    			StringPrecoUnitario = StringPrecoUnitario.replace(',', ' ');
+    			StringPrecoUnitario = StringPrecoUnitario.replaceAll("\\s", "");
+
+    			ValorProduto = Float.valueOf(StringPrecoUnitario.trim()).floatValue();
+
+    			return ValorProduto;
+}
+
+
+    public float BuscarValorTotal() {
+
+    	TotalBuscado = driver.findElement(total_all);
+    	String StringValorTotal;
+    	float ValorTotal = 0;
+    	StringValorTotal = TotalBuscado.getText();
+    	StringValorTotal = StringValorTotal.substring(2,10);
+    	StringValorTotal = StringValorTotal.replace(',', ' ');
+    	StringValorTotal = StringValorTotal.replaceAll("\\s", "");
+    	ValorTotal = Float.valueOf(StringValorTotal.trim()).floatValue();
+    	return ValorTotal;
+     }
+    
+    
+   
+
+
 
     //verify quantity
     public void verifyQuantity(int qty) {

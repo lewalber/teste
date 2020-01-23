@@ -17,5 +17,13 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/jar_files/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/selenium-java-evidence-onejar/selenium-java-evidence.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/itextpdf-5.1.0.jar/itextpdf-5.1.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

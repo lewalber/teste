@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 
 
+
 public class Summary{
 	
 	WebDriver driver;
@@ -44,6 +45,10 @@ public class Summary{
     public void clickProceed(){
             driver.findElement(proceed_button).click();
      }
+   
+    public String getQty() {
+    	
+    	return driver.findElement(qty_cart).getText();
+    }
     
-
 }

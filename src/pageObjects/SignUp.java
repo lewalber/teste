@@ -1,5 +1,6 @@
 package pageObjects;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -9,8 +10,6 @@ import org.openqa.selenium.interactions.Actions;
 public class SignUp {
 	
 	WebDriver driver;
-
- 
     
     By titlemrs = By.id("id_gender2");
     By firstname = By.id("customer_firstname"); 
@@ -23,6 +22,17 @@ public class SignUp {
     By country = By.id("id_country");
     By phone_mobile = By.id("phone_mobile");
     By save_button = By.id("submitAccount");
+
+    public String firstName = "leticia";
+    public String lastName = "walber";
+    public String address = "Street 14 n 14";
+    public String post = "88888";
+    public String city1= "curitiba";
+    public String state1 = "Arizona";
+    public String country1 = "United States";
+    public String pwd = "123456";
+    public String mobile = "5541888888888";
+    
 
     
     public SignUp(WebDriver driver){
@@ -104,9 +114,21 @@ public class SignUp {
             driver.findElement(save_button).click();
     }
 
-    //Get Text
-  //  public String getLoginTitle(){
- //    return    driver.findElement(titleText).getText();
- //   }
+    // Cadastrar Usuário
+    public void cadastro() throws InterruptedException {
+    	
+    	this.setTitleMrs();
+    	this.setFirstName(firstName);
+    	this.setLastName(lastName);
+    	this.setPassword(pwd);
+    	this.setAddress(address);
+    	this.setPost(post);
+    	this.setCity(city1);
+    	this.setState(state1);
+    	this.setCountry(country1);
+    	this.setMobile(mobile);
+    	
+    }
+
 
 }

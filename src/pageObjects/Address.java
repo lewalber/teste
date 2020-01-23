@@ -16,6 +16,14 @@ public class Address {
     By line_3 = By.cssSelector("#address_delivery > li.address_country_name");
     By line_4 = By.cssSelector("#address_delivery > li.address_phone_mobile");
     By proceed = By.xpath("/html/body/div/div[2]/div/div[3]/div/form/p/button");
+    
+    String address = "Street 14 n 14";
+    String post = "88888";
+    String city= "curitiba";
+    String state = "Arizona";
+    String country = "United States";
+    String mobile = "5541888888888";
+    
 	
     public Address(WebDriver driver){
 
@@ -57,8 +65,15 @@ public class Address {
     	driver.findElement(proceed).click();
     }
     	
+    //Verify Address	
+    public void verifyAddress() {
     	
+    	this.verify_address_line1(address);
+    	this.verify_address_line2(city, state, post);
+    	this.verify_address_line3(country);
+    	this.verify_address_line4(mobile);
     	
+    }
     	
     	
     	

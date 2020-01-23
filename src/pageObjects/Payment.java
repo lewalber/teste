@@ -42,13 +42,6 @@ public class Payment {
     	
     }
     
-    //verify total
-//    public void verify_total(String total){
-    	
- //   	assertEquals(total, driver.findElement(total_shipping));
-    	
- //   }
-    	
     //Click Pay By Bank
     public void clickPayByBank() {
     	
@@ -87,6 +80,12 @@ public class Payment {
     public void amount_order(String amt_order){
     	
      	assertEquals(amt_order, driver.findElement(amount_order));
+    	
+    }
+    
+    public String getPurchaseTotal() {
+    	
+    	return driver.findElement(amount).getText();
     	
     }
     	
